@@ -1,4 +1,4 @@
-const baseURL = "https://drab-erin-moose-suit.cyclic.app";
+const baseURL = "https://veterinary-appointment.onrender.com/";
 const docId = sessionStorage.getItem("loginId");
 const actionButtonConfirm = document.querySelector(".confirm");
 const actionButtonReject = document.querySelector(".reject");

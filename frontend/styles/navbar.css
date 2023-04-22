@@ -5,6 +5,14 @@
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.75px;
 }
+/* header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1111;
+  background-color: #fff;
+} */
 .nvbr {
   display: flex;
   justify-content: space-around;
@@ -32,32 +40,32 @@
   font-weight: 700;
   color: rgba(0, 0, 0, 0.65);
 }
-.nvbr a:nth-child(odd)::after {
+.nvbr>a:nth-child(odd)::after {
   content: "";
   display: block;
   border-bottom: 3px solid #e15a53;
   width: 0;
   transition: all 0.5s ease-in-out;
 }
-.nvbr a:nth-child(odd):hover {
+.nvbr>a:nth-child(odd):hover {
   color: #e15a53;
   transition: all 0.5s ease-in-out;
 }
-.nvbr a:nth-child(odd):hover::after {
+.nvbr>a:nth-child(odd):hover::after {
   width: 100%;
 }
-.nvbr a:nth-child(even)::after {
+.nvbr>a:nth-child(even)::after {
   content: "";
   display: block;
   border-bottom: 3px solid #d9822b;
   width: 0;
   transition: all 0.5s ease-in-out;
 }
-.nvbr a:nth-child(even):hover {
+.nvbr>a:nth-child(even):hover {
   color: #d9822b;
   transition: all 0.5s ease-in-out;
 }
-.nvbr a:nth-child(even):hover::after {
+.nvbr>a:nth-child(even):hover::after {
   width: 100%;
 }
 #loginOpt {
@@ -65,6 +73,7 @@
   color: #fff;
   padding: 6px 20px;
   cursor: pointer;
+  position: relative;
 }
 #loginOpt:hover {
   background: linear-gradient(90deg, #e15a53, #d9822b);
@@ -72,19 +81,29 @@
 }
 #logindrop {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   background-color: white;
-  border: 1px solid #d9822b;
-  padding: 0 10px;
+  /* border: 1px solid #d9822b; */
+  /* padding: 0 10px; */
   position: absolute;
   z-index: 9999;
-  top: 75px;
-  right: 125px;
+  top: 70px;
+  right: 50px;
   display: none;
 }
 #logindrop a:first-child {
   border-bottom: 1px solid #d9822b;
   /* margin: 20px 0; */
+}
+#loginData {
+  border: 1px solid #d9822b;
+  padding: 5px 10px;
+  background: linear-gradient(90deg ,#d9822b, #e15a53);
+  margin: 0 1px;
+  color: #fff;
+}
+#loginData:hover {
+  background: linear-gradient(90deg, #e15a53, #d9822b);
 }
 #hamburger {
   display: none;

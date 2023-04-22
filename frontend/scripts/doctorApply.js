@@ -1,4 +1,4 @@
-let url = "https://drab-erin-moose-suit.cyclic.app/doctorAuth/register";
+let url = "https://veterinary-appointment.onrender.com/doctorAuth/register";
 
 let applyBtn = document.querySelector("#applyBtnForm");
 applyBtn.addEventListener("submit", applyDocFunc);

@@ -1,6 +1,6 @@
 document.querySelector("#loginDoc").addEventListener("submit", loginFun);
 
-let url = "https://drab-erin-moose-suit.cyclic.app/adminAuth/login";
+let url = "https://veterinary-appointment.onrender.com/adminAuth/login";
 
 // Login
 async function loginFun(event) {

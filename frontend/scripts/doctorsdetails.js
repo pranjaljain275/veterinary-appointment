@@ -1,15 +1,9 @@
-// import Navbar from "./components/navbar.component.js";
 import { alertMsg } from "./components/alertmsg.component.js";
 
-// let header = document.querySelector("header");
-// header.innerHTML = Navbar();
-
 let doctorcontainer = document.getElementById("doctor_details_container");
-// document.querySelector("#logo").onclick = () => {
-//   location.href = "../index.html";
-// };
+
 const fetchdata = async () => {
-  const response = await fetch("https://drab-erin-moose-suit.cyclic.app/appointment/doctors");
+  const response = await fetch("https://veterinary-appointment.onrender.com/appointment/doctors");
   const data = await response.json();
   const doctors = data.doctors;
   append(doctors);
