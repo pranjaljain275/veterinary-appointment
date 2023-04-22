@@ -18,9 +18,6 @@ require("dotenv").config();
 
 const { AdminModel } = require("../models/admin.model");
 
-
-const SECRET = process.env.SECRET;
-
 const adminAuthRouter = express.Router();
 adminAuthRouter.use(express.json());
 
@@ -69,7 +66,7 @@ adminAuthRouter.post("/login", async (req, res) => {
         if (admin) {
             bcrypt.compare(password, admin.password, async (err, result) => {
                 if (result) {
-                    const token = jwt.sign({ adminId: admin._id }, SECRET);
+                    const token = jwt.sign({ adminId: admin._id }, process.env.SECRET);
                     // req.headers.authorization = token;
                     res.json({ "msg": `${admin.first_name} has logged in successfully!!`, "admin": admin._id, "token": token });
                 }
