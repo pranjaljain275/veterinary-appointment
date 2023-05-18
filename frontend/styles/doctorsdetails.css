@@ -1,23 +1,28 @@
 #doctor_details_container{
     display: grid;
     width: 90%;
-    margin: auto;
-    grid-template-columns: repeat(3, 1fr);
+    margin: 20px auto;
+    grid-template-columns: repeat(4, 1fr);
     text-align: center;
-    gap: 30px;
+    gap: 50px;
 }
 h1{
     text-align: center;
+    margin: 30px auto;
 }
 .doctor_info{
     border-radius: 10px;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.doctor_info p {
+    margin: 12px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
 header{
     margin-bottom: 20px;
 }
-
 .doctor_img img{
     width: 80%;
     height: 200px;

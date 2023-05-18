@@ -1,43 +1,53 @@
 #Doctor_Appointment_form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
   width: 30%;
   justify-content: center;
-  /* align-items: center; */
   margin: auto;
   margin-bottom: 20px;
+  background-color: rgba(194, 194, 194, 0.09);
+  padding: 20px;
 }
 #heading {
   text-align: center;
   margin: 40px 0px;
 }
 #submit_button {
-  width: 50%;
-  margin: auto;
+  width: 100%;
   padding: 12px 20px;
   font-size: 18px;
   font-weight: 600;
   color: white;
   border: none;
   background: linear-gradient(90deg ,#d9822b, #e15a53);
+  margin: 10px 0;
   cursor: pointer;
   height: 100%;
 }
-
-
-
 #submit_button:hover {
   background: linear-gradient(90deg, #e15a53, #d9822b);
 }
 #submit_button:active {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-input,
+label {
+  margin: 8px 0;
+  font-size: 15x;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+input {
+  margin: 8px 0;
+  padding: 6px;
+  height: 16px;
+  font-size: 12px;
+}
+
 select {
-  padding: 4px 10px;
-  border-radius: 5px;
-  border: 1px solid;
+  margin: 8px 0;
+  padding: 6px;
+  height: 28px;
+  font-size: 12px;
 }
 header {
   margin-bottom: 20px;
